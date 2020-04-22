@@ -1,9 +1,6 @@
-﻿// game_console_tic tac toe.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+// game_console_tic tac toe.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 #include <iostream>
-#include <stdio.h> // I include this for clearing screen
-#define esc 27 //
-#define cls printf("%c[2J",esc) //
 
 
 using namespace std;
@@ -216,7 +213,7 @@ int main()
         input_correct(field, ch, isX);
         line_search(field, results, isEnd);
         EndNear(isEnd, field);
-        cls;
+        system("cls");
     }
     cout << results;
     cout << "Please input any key for exit \n";
